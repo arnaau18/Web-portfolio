@@ -23,7 +23,7 @@ export default function Contact() {
     {
       name: "GitHub",
       icon: GithubLogo,
-      url: "https://github.com/arnaufores",
+      url: "https://github.com/arnaau18",
     },
     {
       name: "LinkedIn",
