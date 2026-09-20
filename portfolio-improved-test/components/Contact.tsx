@@ -51,7 +51,7 @@ export default function Contact() {
     <section
       id="contact"
       ref={ref}
-      className="min-h-[100dvh] flex items-center justify-center px-6 py-24 bg-black"
+      className="min-h-[100dvh] flex items-center justify-center px-6 py-24"
     >
       <div className="max-w-[1400px] mx-auto w-full">
         <motion.div
