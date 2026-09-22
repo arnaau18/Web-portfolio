@@ -50,7 +50,7 @@ export default function About() {
     <section
       id="about"
       ref={ref}
-      className="min-h-[100dvh] flex items-center justify-center px-4 md:px-6 py-32 md:py-40 bg-black"
+      className="min-h-[100dvh] flex items-center justify-center px-4 md:px-6 py-32 md:py-40 bg-zinc-950"
     >
       <div className="max-w-[1400px] mx-auto w-full">
         <motion.div
@@ -148,113 +148,6 @@ export default function About() {
                 </div>
               </motion.div>
             </div>
-          </div>
-
-          {/* Timeline */}
-          <div className="mt-24 pt-16 border-t border-zinc-800/50">
-            <motion.div
-              initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.5, ease: [0.32, 0.72, 0, 1] }}
-            >
-              <h3 className="text-2xl md:text-3xl font-bold mb-16 text-zinc-50 text-center">
-                Mi evolución
-              </h3>
-
-              {/* Timeline Container */}
-              <div className="relative px-4 md:px-8">
-                {/* Timeline Line - White */}
-                <div className="absolute left-0 right-0 top-8 h-[3px] bg-white/30"
-                     style={{ boxShadow: '0 0 10px rgba(255,255,255,0.2)' }}
-                />
-
-                {/* Timeline Items */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 relative">
-                  {/* 2022 - Inicio Amateur */}
-                  <motion.div
-                    initial={reduceMotion ? {} : { opacity: 0, y: -20 }}
-                    animate={isInView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.6, delay: 0.6, ease: [0.32, 0.72, 0, 1] }}
-                    className="flex flex-col items-center"
-                  >
-                    {/* Año arriba */}
-                    <div className="text-xl md:text-2xl font-bold text-white mb-3">2022</div>
-
-                    {/* Punto en la línea */}
-                    <div className="relative mb-4">
-                      <div className="w-5 h-5 rounded-full bg-white ring-4 ring-black relative z-10 shadow-lg" />
-                      <div className="absolute inset-0 w-5 h-5 rounded-full bg-white blur-md opacity-50" />
-                    </div>
-
-                    {/* Descripción abajo */}
-                    <div className="text-center">
-                      <div className="text-sm md:text-base text-white font-medium">Inicio Carrera</div>
-                      <div className="text-xs text-zinc-400">(Amateur)</div>
-                    </div>
-                  </motion.div>
-
-                  {/* 2023-2024 - Profesional */}
-                  <motion.div
-                    initial={reduceMotion ? {} : { opacity: 0, y: -20 }}
-                    animate={isInView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.6, delay: 0.7, ease: [0.32, 0.72, 0, 1] }}
-                    className="flex flex-col items-center"
-                  >
-                    <div className="text-xl md:text-2xl font-bold text-white mb-3">2023-24</div>
-
-                    <div className="relative mb-4">
-                      <div className="w-5 h-5 rounded-full bg-white ring-4 ring-black relative z-10 shadow-lg" />
-                      <div className="absolute inset-0 w-5 h-5 rounded-full bg-white blur-md opacity-50" />
-                    </div>
-
-                    <div className="text-center">
-                      <div className="text-sm md:text-base text-white font-medium">Jugador</div>
-                      <div className="text-xs text-zinc-400">Profesional</div>
-                    </div>
-                  </motion.div>
-
-                  {/* 2025 - Estudios DAM */}
-                  <motion.div
-                    initial={reduceMotion ? {} : { opacity: 0, y: -20 }}
-                    animate={isInView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.6, delay: 0.8, ease: [0.32, 0.72, 0, 1] }}
-                    className="flex flex-col items-center"
-                  >
-                    <div className="text-xl md:text-2xl font-bold text-white mb-3">2025</div>
-
-                    <div className="relative mb-4">
-                      <div className="w-5 h-5 rounded-full bg-white ring-4 ring-black relative z-10 shadow-lg" />
-                      <div className="absolute inset-0 w-5 h-5 rounded-full bg-white blur-md opacity-50" />
-                    </div>
-
-                    <div className="text-center">
-                      <div className="text-sm md:text-base text-white font-medium">Inicio</div>
-                      <div className="text-xs text-zinc-400">DAM</div>
-                    </div>
-                  </motion.div>
-
-                  {/* 2026 - Full Stack Developer */}
-                  <motion.div
-                    initial={reduceMotion ? {} : { opacity: 0, y: -20 }}
-                    animate={isInView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.6, delay: 0.9, ease: [0.32, 0.72, 0, 1] }}
-                    className="flex flex-col items-center"
-                  >
-                    <div className="text-xl md:text-2xl font-bold text-white mb-3">2026</div>
-
-                    <div className="relative mb-4">
-                      <div className="w-6 h-6 rounded-full bg-white ring-4 ring-black relative z-10 shadow-xl" />
-                      <div className="absolute inset-0 w-6 h-6 rounded-full bg-white blur-lg opacity-70 animate-pulse" />
-                    </div>
-
-                    <div className="text-center">
-                      <div className="text-sm md:text-base text-white font-bold">Full Stack</div>
-                      <div className="text-xs text-zinc-400">Developer</div>
-                    </div>
-                  </motion.div>
-                </div>
-              </div>
-            </motion.div>
           </div>
         </motion.div>
       </div>

@@ -82,7 +82,7 @@ export default function Skills() {
     <section
       id="skills"
       ref={ref}
-      className="min-h-[100dvh] flex items-center justify-center px-4 md:px-6 py-32 md:py-40 bg-black"
+      className="min-h-[100dvh] flex items-center justify-center px-4 md:px-6 py-32 md:py-40 bg-zinc-950"
     >
       <div className="max-w-[1400px] mx-auto w-full">
         <motion.div

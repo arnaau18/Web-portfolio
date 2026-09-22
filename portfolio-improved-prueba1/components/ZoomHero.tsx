@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef, useState, useEffect } from "react";
 import { TextRoll } from "@/components/ui/text-roll";
+import GlowHorizonFM from "@/components/ui/glow-horizon";
 
 export default function ZoomHero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -30,6 +31,9 @@ export default function ZoomHero() {
   return (
     <div ref={containerRef} className="h-[130vh] relative bg-black">
       <div className="sticky top-0 h-screen overflow-hidden bg-black">
+        {/* GlowHorizon Effect */}
+        <GlowHorizonFM variant="top" />
+
         <div className="absolute inset-0 bg-black">
           <motion.div
             style={{
